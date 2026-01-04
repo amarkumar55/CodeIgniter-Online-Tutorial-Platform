@@ -89,39 +89,41 @@ assets/
 
 ### Run the Application
 
-  Access the application via:
-  
-  http://localhost/your-project-folder
+     Access the application via:
+     
+     http://localhost/your-project-folder
 
 
 🎯 Use Cases
 
-  Online learning platforms
-  
-  Video-based education portals
-  
-  Subscription-based content delivery systems
-  
-  Academic or skill-based training websites
+     Online learning platforms
+     
+     Video-based education portals
+     
+     Subscription-based content delivery systems
+     
+     Academic or skill-based training websites
 
 
 
 📌 Learning Highlights
 
-  CodeIgniter MVC framework usage
-  
-  User authentication & authorization
-  
-  Database schema design
-  
-  Content subscription workflows
-  
-  Interactive user engagement features
+     CodeIgniter MVC framework usage
+     
+     User authentication & authorization
+     
+     Database schema design
+     
+     Content subscription workflows
+     
+     Interactive user engagement features
 
 
 📄 License
 
-This project is intended for educational and demonstration purposes.
+    This project is intended for educational and demonstration purposes.
+
+    
 
 ---
 
