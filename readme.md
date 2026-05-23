@@ -1,129 +1,149 @@
-
 # 🎓 CodeIgniter Online Tutorial Platform
+### PHP · CodeIgniter · MySQL · MVC · Subscription System · LAMP Stack
 
-An online education platform built using the **CodeIgniter PHP framework**, designed to deliver video-based learning across multiple subject categories with user subscriptions and interactive discussions.
+![PHP](https://img.shields.io/badge/PHP-CodeIgniter-777BB4?style=flat-square&logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=flat-square&logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-Responsive_UI-7952B3?style=flat-square&logo=bootstrap)
+![Stack](https://img.shields.io/badge/Stack-LAMP-FFA500?style=flat-square&logo=linux)
+![License](https://img.shields.io/badge/License-Educational-lightgrey?style=flat-square)
 
-This project demonstrates core **MVC architecture**, authentication, database-driven content management, and responsive UI development.
-
----
-
-## 🚀 Overview
-
-The platform enables users to access structured video tutorials, subscribe to subjects or instructors, and actively participate in discussions through comments and replies.
-
-It is designed to provide a flexible and accessible learning experience for users while maintaining a clean and scalable backend architecture.
+> A database-driven online education platform built on CodeIgniter — structured video tutorials, subject subscriptions, and an interactive comment/reply system, all on a clean MVC backend.
 
 ---
 
-## ✨ Key Features
+## 🏗️ Architecture
+
+```
+┌─────────────────────────────────────────────┐
+│              USER LAYER                      │
+│  Browse · Subscribe · Watch · Comment/Reply  │
+└──────────────────┬──────────────────────────┘
+                   │
+┌──────────────────▼──────────────────────────┐
+│         APPLICATION LAYER (MVC)              │
+│                                              │
+│  Controllers — request handling, auth        │
+│  Models      — DB queries, business logic    │
+│  Views       — HTML templates, Bootstrap UI  │
+└──────────────────┬──────────────────────────┘
+                   │
+┌──────────────────▼──────────────────────────┐
+│           INFRASTRUCTURE LAYER               │
+│  MySQL — users, content, subscriptions       │
+│  Apache — LAMP stack, URL routing            │
+└─────────────────────────────────────────────┘
+```
+
+---
+
+## ✨ Features
 
 - 📹 Video tutorials organized by subject categories
-- 👤 User registration & authentication
-- ⭐ Subscription system for subjects or instructors
-- 💬 Comment & reply system for interactive learning
+- 👤 User registration and authentication
+- ⭐ Subscription system — follow subjects or instructors
+- 💬 Comment and reply system for interactive discussions
 - 📚 Category-based content browsing
-- 📱 Responsive UI for desktop & mobile users
+- 📱 Responsive UI — Bootstrap, desktop and mobile
 
 ---
 
-## 🛠️ Technology Stack
+## 🛠️ Tech Stack
 
-### Backend
-- **PHP (CodeIgniter Framework)**
-- **MySQL Database**
-- **MVC Architecture**
-
-### Frontend
-- **HTML5**
-- **CSS3**
-- **Bootstrap**
-- **JavaScript**
-- **jQuery**
-
-### Environment
-- **LAMP Stack (Linux, Apache, MySQL, PHP)**
-- **Ubuntu Linux**
+| Layer | Technology |
+|-------|-----------|
+| Framework | CodeIgniter (PHP) |
+| Architecture | MVC — clean controller/model/view separation |
+| Database | MySQL |
+| Frontend | HTML5 · CSS3 · Bootstrap · JavaScript · jQuery |
+| Server | LAMP (Linux · Apache · MySQL · PHP) |
 
 ---
 
-## 📂 Project Structure (High-Level)
-
-```text
-application/
-├── controllers/
-├── models/
-├── views/
-system/
-assets/
-├── css/
-├── js/
-├── images/
-```
-
-## ⚙️ Setup & Installation
-
-### 1️⃣ Clone the Repository
+## 🚀 Getting Started
 
 ```bash
-   git clone https://github.com/amarkumar55/CodeIgniter-Online-Tutorial-Platform.git
-   cd CodeIgniter-Online-Tutorial-Platform
+# Clone the repository
+git clone https://github.com/amarkumar55/CodeIgniter-Online-Tutorial-Platform.git
+cd CodeIgniter-Online-Tutorial-Platform
 ```
 
- 
-### Configure Environment
+### 1. Configure Database
 
-  Set up a LAMP server (Apache, PHP, MySQL)
-  
-  Configure database credentials in:
-  
-  application/config/database.php
+Update `application/config/database.php`:
 
+```php
+$db['default'] = array(
+    'hostname' => 'localhost',
+    'username' => 'your_db_user',
+    'password' => 'your_db_password',
+    'database' => 'your_db_name',
+);
+```
 
-### Import Database
+### 2. Import Database Schema
 
-  Import the provided SQL file into MySQL
-  
-  Update base URL in:
-  
-  application/config/config.php
+```bash
+mysql -u your_user -p your_db_name < database.sql
+```
 
-### Run the Application
+### 3. Set Base URL
 
-     Access the application via:
-     
-     http://localhost/your-project-folder
+Update `application/config/config.php`:
 
+```php
+$config['base_url'] = 'http://localhost/CodeIgniter-Online-Tutorial-Platform/';
+```
 
-🎯 Use Cases
+### 4. Run via LAMP
 
-     Online learning platforms
-     
-     Video-based education portals
-     
-     Subscription-based content delivery systems
-     
-     Academic or skill-based training websites
+Start Apache and MySQL, then open:
 
-
-
-📌 Learning Highlights
-
-     CodeIgniter MVC framework usage
-     
-     User authentication & authorization
-     
-     Database schema design
-     
-     Content subscription workflows
-     
-     Interactive user engagement features
-
-
-📄 License
-
-    This project is intended for educational and demonstration purposes.
-
-    
+```
+http://localhost/CodeIgniter-Online-Tutorial-Platform/
+```
 
 ---
 
+## 📁 Project Structure
+
+```
+application/
+├── controllers/      # Auth, Tutorials, Subscriptions, Comments
+├── models/           # User, Content, Subscription, Comment models
+└── views/            # Blade-style PHP templates + Bootstrap layouts
+system/               # CodeIgniter core framework
+assets/
+├── css/              # Custom stylesheets
+├── js/               # jQuery + custom scripts
+└── images/           # Static assets
+```
+
+---
+
+## 🌍 Use Cases
+
+- Online learning and video education portals
+- Subscription-based content delivery systems
+- Academic or skill-based training platforms
+- CodeIgniter MVC reference implementation
+
+---
+
+## 🔭 Roadmap
+
+- [ ] REST API layer for mobile client support
+- [ ] Video upload and streaming (AWS S3)
+- [ ] Payment gateway for premium subscriptions
+- [ ] Docker + cloud deployment
+- [ ] Search and filtering across tutorials
+
+---
+
+## 👤 Author
+
+**Amar Kumar** — Senior Backend Engineer · IBM Certified AI Engineer  
+📌 [LinkedIn](https://www.linkedin.com/in/amarkumar241429017) · 💻 [GitHub](https://github.com/amarkumar55)
+
+---
+
+*MVC done right — clean separation of concerns, database-driven content, subscription workflows built from scratch.*
