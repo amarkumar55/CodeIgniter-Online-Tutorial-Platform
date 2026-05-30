@@ -139,11 +139,15 @@ assets/
 
 ---
 
-## 👤 Author
+<div align="center">
 
-**Amar Kumar** — Senior Backend Engineer · IBM Certified AI Engineer  
-📌 [LinkedIn](https://www.linkedin.com/in/amarskdev/) · 💻 [GitHub](https://github.com/amarskdev)
+### 👤 About the Author
 
----
+**Amar Kumar**  
+*Senior Backend Engineer · IBM Certified AI Engineer*
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-amarskdev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amarskdev)
+[![GitHub](https://img.shields.io/badge/GitHub-amarskdev-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amarskdev)
+
+</div>
 *MVC done right — clean separation of concerns, database-driven content, subscription workflows built from scratch.*
