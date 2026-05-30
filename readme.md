@@ -63,7 +63,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/amarkumar55/CodeIgniter-Online-Tutorial-Platform.git
+git clone https://github.com/amarskdev/CodeIgniter-Online-Tutorial-Platform.git
 cd CodeIgniter-Online-Tutorial-Platform
 ```
 
@@ -142,7 +142,7 @@ assets/
 ## 👤 Author
 
 **Amar Kumar** — Senior Backend Engineer · IBM Certified AI Engineer  
-📌 [LinkedIn](https://www.linkedin.com/in/amarkumar241429017) · 💻 [GitHub](https://github.com/amarkumar55)
+📌 [LinkedIn](https://www.linkedin.com/in/amarskdev/) · 💻 [GitHub](https://github.com/amarskdev)
 
 ---
 
