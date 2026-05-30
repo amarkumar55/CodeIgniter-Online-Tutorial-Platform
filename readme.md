@@ -139,9 +139,11 @@ assets/
 
 ---
 
-## 🤝 Connect With Me
+*MVC done right — clean separation of concerns, database-driven content, subscription workflows built from scratch.*
 
 ---
+
+## 🤝 Connect With Me
 
 <div align="center">
 
@@ -161,5 +163,3 @@ assets/
 
 </div>
 
----
-*MVC done right — clean separation of concerns, database-driven content, subscription workflows built from scratch.*
